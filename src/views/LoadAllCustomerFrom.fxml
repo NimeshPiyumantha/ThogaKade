@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoadAllContext" prefHeight="298.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ALoadAllCustomerFromController">
+    <children>
+        <ImageView fitHeight="298.0" fitWidth="598.0" pickOnBounds="true">
+            <image>
+                <Image url="@../background/shop1.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="12.0" layoutY="9.0" opacity="0.83" prefHeight="280.0" prefWidth="575.0" style="-fx-background-color: #2c3e50;">
+            <children>
+                <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LoadAll Customer">
+                    <font>
+                        <Font name="Arial Black" size="22.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="38.0" fitWidth="49.0" layoutX="504.0" layoutY="11.0" onMouseClicked="#HomeOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/home.png" />
+                    </image>
+                </ImageView>
+            <TableView fx:id="tblCustomer" layoutX="11.0" layoutY="52.0" prefHeight="219.0" prefWidth="553.0">
+              <columns>
+                <TableColumn fx:id="ColId" prefWidth="137.0" text="Customer ID" />
+                <TableColumn fx:id="ColName" prefWidth="132.0" text="Customer Name" />
+                  <TableColumn fx:id="ColAddress" prefWidth="134.0" text="Address" />
+                  <TableColumn fx:id="ColSalary" prefWidth="149.0" text="Salary" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

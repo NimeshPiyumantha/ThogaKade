@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DashBoardContext" prefHeight="298.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFromController">
+   <children>
+      <ImageView fitHeight="298.0" fitWidth="598.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background/shop.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="13.0" layoutY="13.0" opacity="0.82" prefHeight="273.0" prefWidth="572.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ecf0f1; -fx-border-width: 3; -fx-background-radius: 20; -fx-border-radius: 25;">
+         <children>
+            <Pane layoutX="293.0" layoutY="40.0" prefHeight="193.0" prefWidth="265.0" style="-fx-background-color: #bdc3c7; -fx-border-color: #34495e; -fx-border-width: 3; -fx-background-radius: 20; -fx-border-radius: 25;">
+               <children>
+                  <Button layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="Save" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="137.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="Search" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="Update" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="137.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="Delete" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="19.0" layoutY="135.0" mnemonicParsing="false" onAction="#btnLoadAllOnAction" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="LoadAll" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="137.0" layoutY="135.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #c0392b; -fx-border-color: #2c3e50; -fx-border-width: 3; -fx-border-radius: 25; -fx-background-radius: 20;" text="Place Order" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            <Text fill="#ecf0f1" layoutX="69.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thoga&#10;          Kade">
+               <font>
+                  <Font name="Algerian" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

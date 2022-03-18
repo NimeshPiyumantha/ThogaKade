@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UpdateContext" prefHeight="298.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AUpdateCustomerFromController">
+    <children>
+        <ImageView fitHeight="298.0" fitWidth="598.0" pickOnBounds="true">
+            <image>
+                <Image url="@../background/shop1.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="12.0" layoutY="9.0" opacity="0.83" prefHeight="280.0" prefWidth="575.0" style="-fx-background-color: #2c3e50;">
+            <children>
+                <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer">
+                    <font>
+                        <Font name="Arial Black" size="22.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="txtId" layoutX="21.0" layoutY="58.0" onAction="#CustomerUpdateSearchOnAction" prefHeight="25.0" prefWidth="208.0" promptText="Custmoer Id">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtName" layoutX="21.0" layoutY="110.0" prefHeight="25.0" prefWidth="208.0" promptText="Customer Name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtAddress" layoutX="21.0" layoutY="163.0" prefHeight="25.0" prefWidth="208.0" promptText="Customer Address">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtSalary" layoutX="21.0" layoutY="216.0" prefHeight="25.0" prefWidth="208.0" promptText="Customer Salary">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="452.0" layoutY="225.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="38.0" prefWidth="95.0" style="-fx-background-radius: 15;" text="Update">
+                    <font>
+                        <Font name="Arial Black" size="17.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="38.0" fitWidth="49.0" layoutX="499.0" layoutY="14.0" onMouseClicked="#HomeOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/home.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
